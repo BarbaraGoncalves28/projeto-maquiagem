@@ -1,0 +1,70 @@
+.base{
+    display: flex;
+    flex-direction: column;
+    background: var(--quinta-bg-color);
+}
+
+.heading{
+    color: var(--terceira-bg-color);
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.base-container img{
+    border-radius: 10px;
+}
+
+.base-box img{
+    border-radius: 50%;
+}
+
+.base-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem; 
+    align-items: center; 
+}
+
+.base-box img{
+    transition: .5s ease;
+}
+
+.base-box img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--terceira-bg-color);
+}
+
+
+/* BREAKPOINTS */
+
+@media screen and (max-width: 1280px) {
+    .base h2{
+        padding-bottom: 1.5rem;
+    }    
+}
+
+@media (max-width: 991px) {
+    .base{
+        padding-bottom: 7rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    
+    .base-container{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .base img{
+        margin-bottom: 1rem;
+    }
+}
+
+  @media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+  }
+

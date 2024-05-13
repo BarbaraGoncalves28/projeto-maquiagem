@@ -1,0 +1,89 @@
+.sobre{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobre-img img{
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.sobre-content h2{
+    color: var(--terceira-bg-color);
+    text-align: center;
+    line-height: 1.2;
+    font-size: 4rem;
+}
+
+.sobre-content p{
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--segunda-bg-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--segunda-bg-color);
+    margin: 0rem 1.5rem 8rem 0;
+    transition: .5s ease-in-out;
+}
+
+.social-media a:hover{
+    background: var(--segunda-bg-color);
+    color: var(--terceira-bg-color);
+    box-shadow: 0 0 1rem var(--segunda-bg-color);
+}
+
+
+
+/* BREAKPOINTS */
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .sobre{
+        flex-direction: column;
+    }
+
+    .sobre-img img{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    .sobre-content h2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }    
+}
+
+@media screen and (max-width: 365px) {
+    .sobre-img img{
+        width: 90vw;
+    }   
+}
+
+
+
+
+
+
